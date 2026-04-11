@@ -1,0 +1,149 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
+    "Noto Sans JP", sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", "Cascadia Code", monospace;
+  --color-brand: #1d9e75;
+  --color-brand-dark: #178a65;
+  --color-brand-light: #e6f5ef;
+  --color-brand-glow: rgba(29, 158, 117, 0.1);
+  --color-surface: #f8faf9;
+  --color-text-primary: #111827;
+  --color-text-secondary: #4b5563;
+  --color-text-muted: #9ca3af;
+  --color-border: #e2e8e5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Header scroll effect */
+.header-scrolled {
+  background: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+/* Scroll reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
+}
+
+.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero gradient animation */
+@keyframes gradient-shift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.hero-gradient {
+  background: linear-gradient(
+    135deg,
+    var(--color-brand-light) 0%,
+    #ffffff 30%,
+    #f0fdf8 60%,
+    var(--color-brand-light) 100%
+  );
+  background-size: 200% 200%;
+  animation: gradient-shift 12s ease infinite;
+}
+
+/* Feature card hover */
+.feature-card {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 12px 24px -4px rgba(0, 0, 0, 0.06),
+    0 0 0 1px var(--color-brand-glow);
+}
+
+/* Architecture diagram */
+.arch-box {
+  background: white;
+  border: 2px solid var(--color-border);
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.arch-arrow {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--color-brand);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.arch-arrow svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+/* Platform card */
+.platform-card {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.platform-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px -4px rgba(0, 0, 0, 0.06);
+}
+
+/* Download button */
+.btn-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.25rem;
+  background: var(--color-brand);
+  color: white;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition:
+    background 0.2s ease,
+    transform 0.1s ease;
+}
+
+.btn-download:hover {
+  background: var(--color-brand-dark);
+}
+
+.btn-download:active {
+  transform: scale(0.98);
+}
