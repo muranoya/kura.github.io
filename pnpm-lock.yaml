@@ -12,13 +12,13 @@ importers:
         specifier: ^4
         version: 4.2.2(vite@6.4.2(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.21.0))
       marked:
-        specifier: ^18.0.2
+        specifier: ^18
         version: 18.0.2
       tailwindcss:
         specifier: ^4
         version: 4.2.2
       tsx:
-        specifier: ^4.21.0
+        specifier: ^4
         version: 4.21.0
       typescript:
         specifier: ^5
