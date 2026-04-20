@@ -4,17 +4,22 @@
   "packageManager": "pnpm@10.30.1",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
+    "dev": "pnpm exec tsx scripts/generate-legal.ts && vite",
+    "generate-legal": "pnpm exec tsx scripts/generate-legal.ts",
+    "build": "pnpm exec tsx scripts/generate-legal.ts && tsc && vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4",
+    "marked": "^18",
     "tailwindcss": "^4",
+    "tsx": "^4",
     "typescript": "^5",
     "vite": "^6"
   },
   "pnpm": {
-    "onlyBuiltDependencies": ["esbuild"]
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
   }
 }

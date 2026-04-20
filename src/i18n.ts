@@ -128,6 +128,18 @@ const translations: Record<string, Record<Lang, string>> = {
     en: "Serverless password manager",
     ja: "サーバー不要のパスワードマネージャー",
   },
+  "footer.privacy": {
+    en: "Privacy Policy",
+    ja: "プライバシーポリシー",
+  },
+  "footer.terms": {
+    en: "Terms of Use",
+    ja: "利用規約",
+  },
+  "footer.contact": {
+    en: "Contact",
+    ja: "連絡先",
+  },
 };
 
 let currentLang: Lang = "en";
@@ -142,6 +154,9 @@ export function setLang(lang: Lang): void {
   currentLang = lang;
   localStorage.setItem("kura-lang", lang);
   document.documentElement.lang = lang;
+  document.querySelectorAll<HTMLAnchorElement>("a[data-lang-href]").forEach((a) => {
+    a.href = a.dataset.langHref!.replace("{lang}", lang);
+  });
   document.querySelectorAll<HTMLElement>("[data-i18n]").forEach((el) => {
     const key = el.dataset.i18n!;
     const entry = translations[key];
