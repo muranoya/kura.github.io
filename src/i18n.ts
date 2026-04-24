@@ -98,6 +98,22 @@ const translations: Record<string, Record<Lang, string>> = {
     en: "Download",
     ja: "ダウンロード",
   },
+  "download.extensions": {
+    en: "Browser Extensions",
+    ja: "ブラウザ拡張機能",
+  },
+  "download.desktop": {
+    en: "Desktop & Mobile",
+    ja: "デスクトップ & モバイル",
+  },
+  "download.firefox": {
+    en: "Add to Firefox",
+    ja: "Firefoxに追加",
+  },
+  "download.chrome": {
+    en: "Add to Chrome",
+    ja: "Chromeに追加",
+  },
 
   // Getting Started
   "start.title": { en: "Getting Started", ja: "はじめ方" },

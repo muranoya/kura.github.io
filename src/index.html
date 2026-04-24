@@ -129,7 +129,7 @@
           S3-compatible storage you control.
         </p>
         <div class="mt-10 flex flex-wrap items-center justify-center gap-4">
-          <a href="https://github.com/muranoya/kura/releases/latest" target="_blank" rel="noopener" class="btn-download text-base! px-6! py-3!">
+          <a href="#download" class="btn-download text-base! px-6! py-3!">
             <svg
               class="h-5 w-5"
               fill="none"
@@ -470,79 +470,112 @@
           risk.
         </p>
 
-        <!-- Supported Platforms -->
-        <div class="reveal mt-12">
-          <h3
-            data-i18n="download.platforms"
-            class="mb-6 text-center text-sm font-semibold uppercase tracking-wider text-text-muted"
-          >
-            Supported Platforms
-          </h3>
-          <div class="flex flex-wrap items-center justify-center gap-6 md:gap-10">
-            <!-- Windows -->
-            <div class="flex items-center gap-2.5">
-              <svg class="h-7 w-7" viewBox="0 0 24 24" fill="#0078D4">
-                <path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/>
+        <!-- Download Cards -->
+        <div class="reveal mt-12 grid grid-cols-1 gap-6 md:grid-cols-2">
+          <!-- Browser Extensions Card -->
+          <div class="flex flex-col gap-4 rounded-xl border border-border bg-white p-6">
+            <h3
+              data-i18n="download.extensions"
+              class="text-center text-sm font-semibold uppercase tracking-wider text-text-muted"
+            >
+              Browser Extensions
+            </h3>
+            <!-- Firefox -->
+            <a
+              href="https://addons.mozilla.org/ja/firefox/addon/dc747ff47c9d45f4b4fd/"
+              target="_blank"
+              rel="noopener"
+              class="flex items-center gap-3 rounded-lg border border-border px-4 py-3 transition-colors hover:bg-surface"
+            >
+              <svg class="h-6 w-6 flex-shrink-0" viewBox="0 0 24 24" fill="#FF7139">
+                <path d="M8.824 7.287c.008 0 .004 0 0 0zm-2.8-1.4c.006 0 .003 0 0 0zm16.754 2.161c-.505-1.215-1.53-2.528-2.333-2.943.654 1.283 1.033 2.57 1.177 3.53l.002.02c-1.314-3.278-3.544-4.6-5.366-7.477-.091-.147-.184-.292-.273-.446a3.545 3.545 0 01-.13-.24 2.118 2.118 0 01-.172-.46.03.03 0 00-.027-.03.038.038 0 00-.021 0l-.006.001a.037.037 0 00-.01.005L15.624 0c-2.585 1.515-3.657 4.168-3.932 5.856a6.197 6.197 0 00-2.305.587.297.297 0 00-.147.37c.057.162.24.24.396.17a5.622 5.622 0 012.008-.523l.067-.005a5.847 5.847 0 011.957.222l.095.03a5.816 5.816 0 01.616.228c.08.036.16.073.238.112l.107.055a5.835 5.835 0 01.368.211 5.953 5.953 0 012.034 2.104c-.62-.437-1.733-.868-2.803-.681 4.183 2.09 3.06 9.292-2.737 9.02a5.164 5.164 0 01-1.513-.292 4.42 4.42 0 01-.538-.232c-1.42-.735-2.593-2.121-2.74-3.806 0 0 .537-2 3.845-2 .357 0 1.38-.998 1.398-1.287-.005-.095-2.029-.9-2.817-1.677-.422-.416-.622-.616-.8-.767a3.47 3.47 0 00-.301-.227 5.388 5.388 0 01-.032-2.842c-1.195.544-2.124 1.403-2.8 2.163h-.006c-.46-.584-.428-2.51-.402-2.913-.006-.025-.343.176-.389.206-.406.29-.787.616-1.136.974-.397.403-.76.839-1.085 1.303a9.816 9.816 0 00-1.562 3.52c-.003.013-.11.487-.19 1.073-.013.09-.026.181-.037.272a7.8 7.8 0 00-.069.667l-.002.034-.023.387-.001.06C.386 18.795 5.593 24 12.016 24c5.752 0 10.527-4.176 11.463-9.661.02-.149.035-.298.052-.448.232-1.994-.025-4.09-.753-5.844z"/>
               </svg>
-              <span class="text-sm font-medium text-text-secondary">Windows</span>
-            </div>
-            <!-- macOS -->
-            <div class="flex items-center gap-2.5">
-              <svg class="h-7 w-7" viewBox="0 0 24 24" fill="#555">
-                <path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/>
+              <div class="flex-1">
+                <div class="text-sm font-medium text-text-primary" data-i18n="download.firefox">Add to Firefox</div>
+                <div class="text-xs text-text-muted">Firefox Add-ons</div>
+              </div>
+              <svg class="h-4 w-4 flex-shrink-0 text-text-muted" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
               </svg>
-              <span class="text-sm font-medium text-text-secondary">macOS</span>
-            </div>
-            <!-- Linux (terminal icon) -->
-            <div class="flex items-center gap-2.5">
-              <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="3" width="20" height="18" rx="2"/>
-                <polyline points="6 9 10 13 6 17"/>
-                <line x1="14" y1="17" x2="18" y2="17"/>
-              </svg>
-              <span class="text-sm font-medium text-text-secondary">Linux</span>
-            </div>
-            <!-- Android -->
-            <div class="flex items-center gap-2.5">
-              <svg class="h-7 w-7" viewBox="0 0 24 24" fill="#3DDC84">
-                <path d="M17.523 15.341a.96.96 0 0 0 .961-.96.96.96 0 0 0-.961-.96.96.96 0 0 0-.96.96.96.96 0 0 0 .96.96zm-11.046 0a.96.96 0 0 0 .96-.96.96.96 0 0 0-.96-.96.96.96 0 0 0-.96.96.96.96 0 0 0 .96.96zM17.689 8.424l2.122-3.678a.441.441 0 0 0-.163-.601.441.441 0 0 0-.601.163l-2.149 3.724A12.906 12.906 0 0 0 12 7.065a12.91 12.91 0 0 0-4.898.967L4.953 4.308a.441.441 0 0 0-.601-.163.441.441 0 0 0-.163.601l2.122 3.678C2.691 10.553.343 14.29 0 18.612h24c-.344-4.323-2.691-8.06-6.311-10.188z"/>
-              </svg>
-              <span class="text-sm font-medium text-text-secondary">Android</span>
-            </div>
-            <!-- Chrome (multicolor, based on official logo) -->
-            <div class="flex items-center gap-2.5">
-              <svg class="h-7 w-7" viewBox="0 0 48 48">
+            </a>
+            <!-- Chrome -->
+            <a
+              href="https://chromewebstore.google.com/detail/kura/bkhdjpmpbkaiafemghempeagliblhofc"
+              target="_blank"
+              rel="noopener"
+              class="flex items-center gap-3 rounded-lg border border-border px-4 py-3 transition-colors hover:bg-surface"
+            >
+              <svg class="h-6 w-6 flex-shrink-0" viewBox="0 0 48 48">
                 <path d="M24,12H44.7812a23.9939,23.9939,0,0,0-41.5639.0029L13.6079,30l.0093-.0024A11.9852,11.9852,0,0,1,24,12Z" fill="#EA4335"/>
                 <path d="M34.3913,30.0029,24.0007,48A23.994,23.994,0,0,0,44.78,12.0031H23.9989l-.0025.0093A11.985,11.985,0,0,1,34.3913,30.0029Z" fill="#FBBC04"/>
                 <path d="M13.6086,30.0031,3.218,12.006A23.994,23.994,0,0,0,24.0025,48L34.3931,30.0029l-.0067-.0068a11.9852,11.9852,0,0,1-20.7778.007Z" fill="#34A853"/>
                 <circle cx="24" cy="24" r="12" fill="#fff"/>
                 <circle cx="24" cy="24" r="9.5" fill="#1A73E8"/>
               </svg>
-              <span class="text-sm font-medium text-text-secondary">Chrome</span>
-            </div>
-            <!-- Firefox -->
-            <div class="flex items-center gap-2.5">
-              <svg class="h-7 w-7" viewBox="0 0 24 24" fill="#FF7139">
-                <path d="M8.824 7.287c.008 0 .004 0 0 0zm-2.8-1.4c.006 0 .003 0 0 0zm16.754 2.161c-.505-1.215-1.53-2.528-2.333-2.943.654 1.283 1.033 2.57 1.177 3.53l.002.02c-1.314-3.278-3.544-4.6-5.366-7.477-.091-.147-.184-.292-.273-.446a3.545 3.545 0 01-.13-.24 2.118 2.118 0 01-.172-.46.03.03 0 00-.027-.03.038.038 0 00-.021 0l-.006.001a.037.037 0 00-.01.005L15.624 0c-2.585 1.515-3.657 4.168-3.932 5.856a6.197 6.197 0 00-2.305.587.297.297 0 00-.147.37c.057.162.24.24.396.17a5.622 5.622 0 012.008-.523l.067-.005a5.847 5.847 0 011.957.222l.095.03a5.816 5.816 0 01.616.228c.08.036.16.073.238.112l.107.055a5.835 5.835 0 01.368.211 5.953 5.953 0 012.034 2.104c-.62-.437-1.733-.868-2.803-.681 4.183 2.09 3.06 9.292-2.737 9.02a5.164 5.164 0 01-1.513-.292 4.42 4.42 0 01-.538-.232c-1.42-.735-2.593-2.121-2.74-3.806 0 0 .537-2 3.845-2 .357 0 1.38-.998 1.398-1.287-.005-.095-2.029-.9-2.817-1.677-.422-.416-.622-.616-.8-.767a3.47 3.47 0 00-.301-.227 5.388 5.388 0 01-.032-2.842c-1.195.544-2.124 1.403-2.8 2.163h-.006c-.46-.584-.428-2.51-.402-2.913-.006-.025-.343.176-.389.206-.406.29-.787.616-1.136.974-.397.403-.76.839-1.085 1.303a9.816 9.816 0 00-1.562 3.52c-.003.013-.11.487-.19 1.073-.013.09-.026.181-.037.272a7.8 7.8 0 00-.069.667l-.002.034-.023.387-.001.06C.386 18.795 5.593 24 12.016 24c5.752 0 10.527-4.176 11.463-9.661.02-.149.035-.298.052-.448.232-1.994-.025-4.09-.753-5.844z"/>
+              <div class="flex-1">
+                <div class="text-sm font-medium text-text-primary" data-i18n="download.chrome">Add to Chrome</div>
+                <div class="text-xs text-text-muted">Chrome Web Store</div>
+              </div>
+              <svg class="h-4 w-4 flex-shrink-0 text-text-muted" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
               </svg>
-              <span class="text-sm font-medium text-text-secondary">Firefox</span>
-            </div>
+            </a>
           </div>
-        </div>
 
-        <!-- Download Button -->
-        <div class="reveal mt-10 text-center">
-          <a
-            href="https://github.com/muranoya/kura/releases/latest"
-            target="_blank"
-            rel="noopener"
-            class="btn-download text-base! px-8! py-3.5!"
-          >
-            <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V3" />
-            </svg>
-            <span data-i18n="download.btn">Download from GitHub Releases</span>
-          </a>
+          <!-- Desktop & Mobile Card -->
+          <div class="flex flex-col gap-4 rounded-xl border border-border bg-white p-6">
+            <h3
+              data-i18n="download.desktop"
+              class="text-center text-sm font-semibold uppercase tracking-wider text-text-muted"
+            >
+              Desktop &amp; Mobile
+            </h3>
+            <!-- Platform icons -->
+            <div class="flex items-center justify-center gap-5">
+              <!-- Windows -->
+              <div class="flex flex-col items-center gap-1.5">
+                <svg class="h-7 w-7" viewBox="0 0 24 24" fill="#0078D4">
+                  <path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/>
+                </svg>
+                <span class="text-xs text-text-muted">Windows</span>
+              </div>
+              <!-- macOS -->
+              <div class="flex flex-col items-center gap-1.5">
+                <svg class="h-7 w-7" viewBox="0 0 24 24" fill="#555">
+                  <path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/>
+                </svg>
+                <span class="text-xs text-text-muted">macOS</span>
+              </div>
+              <!-- Linux -->
+              <div class="flex flex-col items-center gap-1.5">
+                <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="18" rx="2"/>
+                  <polyline points="6 9 10 13 6 17"/>
+                  <line x1="14" y1="17" x2="18" y2="17"/>
+                </svg>
+                <span class="text-xs text-text-muted">Linux</span>
+              </div>
+              <!-- Android -->
+              <div class="flex flex-col items-center gap-1.5">
+                <svg class="h-7 w-7" viewBox="0 0 24 24" fill="#3DDC84">
+                  <path d="M17.523 15.341a.96.96 0 0 0 .961-.96.96.96 0 0 0-.961-.96.96.96 0 0 0-.96.96.96.96 0 0 0 .96.96zm-11.046 0a.96.96 0 0 0 .96-.96.96.96 0 0 0-.96-.96.96.96 0 0 0-.96.96.96.96 0 0 0 .96.96zM17.689 8.424l2.122-3.678a.441.441 0 0 0-.163-.601.441.441 0 0 0-.601.163l-2.149 3.724A12.906 12.906 0 0 0 12 7.065a12.91 12.91 0 0 0-4.898.967L4.953 4.308a.441.441 0 0 0-.601-.163.441.441 0 0 0-.163.601l2.122 3.678C2.691 10.553.343 14.29 0 18.612h24c-.344-4.323-2.691-8.06-6.311-10.188z"/>
+                </svg>
+                <span class="text-xs text-text-muted">Android</span>
+              </div>
+            </div>
+            <!-- GitHub Releases button -->
+            <a
+              href="https://github.com/muranoya/kura/releases/latest"
+              target="_blank"
+              rel="noopener"
+              class="btn-download mt-auto w-full justify-center"
+            >
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V3" />
+              </svg>
+              <span data-i18n="download.btn">Download</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
